@@ -1,0 +1,48 @@
+﻿@model onlineshop1.Models.Registertbl
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<form method="post">
+    @*<label>Username</label><input type="text" name="username" class="form-control" />
+        <label>Password</label><input type="text" name="password" class="form-control" />
+        <label>Age</label> <input type="text" name="age" class="form-control" />
+        <label>Eamil</label><input type="text" name="email" class="form-control" />
+        <label>DOB</label><input type="text"name="DOB" class="form-control"/>
+        <label>Nationality</label><input type="text" name="nationality" class="form-control" />
+        <input type="submit" value="Register" class="btn btn" />*@
+
+
+    @* This feature is called is html helper
+        html helper aloows us to biuld UI'S*@
+    @*@Html.TextBox("uname ")
+        @Html.TextBox(" password")
+        @Html.TextBox("age ")
+        @Html.TextBox(" email")
+        @Html.TextBox(" nationality")*@
+
+    <div style="width:500px; margin-left:200px">
+       
+        @Html.TextBoxFor(c => c.uname, new { @class = "form-control" })<br />
+        @Html.ValidationMessageFor(c => c.uname, null, new { @class = "form-control" })
+
+        @Html.TextBoxFor(c => c.password, new { @class = "form-control" })<br />
+        @Html.ValidationMessageFor(c => c.password, null, new { @class = "btn btn-info" })
+
+        @Html.TextBoxFor(c => c.age, new { @class = "form-control" })<br />
+        @Html.ValidationMessageFor(c => c.age, null, new { @class = "btn btn-info" })
+
+        @Html.TextBoxFor(c => c.email, new { @class = "form-control" })<br />
+        @Html.ValidationMessageFor(c => c.email, null, new { @class = "btn btn-info" })
+
+        @Html.TextBoxFor(c => c.nationality, new { @class = "form-control" })<br /><br />
+
+        <input type="submit" value="Register" class="btn btn-primary" />
+    </div>
+</form>
+
+    <div class="btn btn-info">
+        @ViewData["v"]
+    </div>
+    

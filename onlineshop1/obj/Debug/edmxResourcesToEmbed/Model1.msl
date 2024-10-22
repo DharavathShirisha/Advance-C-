@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="onlineshoppingdbModelStoreContainer" CdmEntityContainer="onlineshoppingdbEntities">
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="onlineshoppingdbModel.product">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="pimage" ColumnName="pimage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registertbls">
+      <EntityTypeMapping TypeName="onlineshoppingdbModel.Registertbl">
+        <MappingFragment StoreEntitySet="Registertbl">
+          <ScalarProperty Name="uname" ColumnName="uname" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userorders">
+      <EntityTypeMapping TypeName="onlineshoppingdbModel.userorder">
+        <MappingFragment StoreEntitySet="userorders">
+          <ScalarProperty Name="tranid" ColumnName="tranid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="transdate" ColumnName="transdate" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

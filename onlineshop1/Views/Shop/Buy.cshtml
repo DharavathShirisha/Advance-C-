@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Buy";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+@if (Model != null)
+{
+
+
+<div class="row">
+    @foreach (var i in Model)
+    {
+        <div class="col-md-4">
+            <img src="/@i.pimage" />
+            <div>@i.pid</div>
+            <div>@i.pname</div>
+            <div>@i.price</div>
+            <div>@i.description</div>
+
+        </div>
+    }
+</div>
+}
+<form method="post">
+    <input type="text" name="qty" class="form-control" />
+    <input type="submit" name="Confirm Buy" class="btn btn-primary" />
+</form>
+<div class="btn btn-info">
+    @ViewData["r"]
+</div>

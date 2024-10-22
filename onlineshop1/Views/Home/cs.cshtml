@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>cs</title>
+</head>
+<body>
+    <div>
+        <!-- declare variable  -->
+
+        @{
+            //logic goes here
+            string st = "india";
+        }
+
+        @st  <!-- printting -->
+        <!-- if -->
+        @{
+            int a = 10;
+            int b = 20;
+            if (a > b)
+            {
+                <div>@a</div>
+            }
+            else
+            {
+                <div>@b</div>
+            }
+
+
+        }
+
+        <!-- foreach loop -->
+        @{
+            int[] d = { 10, 20, 30 };
+
+            foreach (var item in d)
+            {
+                <li>@item</li>
+                
+            }
+        }
+
+
+        <h1>Welcome to cs page</h1><hr>
+
+        content of cs page goes here
+    </div>
+
+    </div>
+</body>
+</html>

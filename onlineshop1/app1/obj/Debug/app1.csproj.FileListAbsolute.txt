@@ -1,0 +1,2 @@
+C:\Users\dharavath.shirisha\Desktop\Asp.net\MVC\onlineshop1\app1\obj\Debug\app1.csproj.AssemblyReference.cache
+C:\Users\dharavath.shirisha\Desktop\Asp.net\MVC\onlineshop1\app1\obj\Debug\app1.csproj.CoreCompileInputs.cache

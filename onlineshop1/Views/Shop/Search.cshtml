@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Search</h2>
+@if (Model != null)
+{
+    <div class="row">
+        @foreach (var i in Model)
+        {
+            <div class="col-md-4">
+                <img src="/@i.pimage" width="250px" height="200px" />
+                <div>@i.pid</div>
+                <div>@i.pname</div>
+                <div>@i.price</div>
+                <div>@i.description</div>
+                <img src="@i.pimage" />
+                <div><a href="buy?pid=@i.pid" class="btn btn-info">Buy Now</a></div>
+            </div>
+        }
+    </div>
+}
+
+<div>
+    @ViewData["s"]
+</div>
